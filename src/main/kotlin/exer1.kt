@@ -1,12 +1,13 @@
 //Crie uma função que receba um número inteiro e retorne verdadeiro se o número for par e falso caso contrário.
-fun main(){
 
-    fun imparPar(numero:Int): Boolean {
-        if((numero % 2) == 0){
-            return true
-        }
-        return false
+fun imparPar(numero:Int): Boolean {
+    if((numero % 2) == 0){
+        return true
     }
+    return false
+}
+
+fun main(){
 
     println(imparPar(1))
     println(imparPar(2))
