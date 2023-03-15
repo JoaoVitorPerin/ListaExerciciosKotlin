@@ -16,4 +16,6 @@ fun main() {
     }
 
     palindromo("arara")
+    palindromo("anna")
+    palindromo("joao")
 }
