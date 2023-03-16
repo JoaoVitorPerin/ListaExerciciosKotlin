@@ -1,9 +1,10 @@
 //Crie uma função que receba uma lista de números inteiros e retorne
 //uma lista com os números em ordem crescente, sem usar o método de ordenação da linguagem.
 
-var listaInteiros = intArrayOf(8,2,3,5,6,4,1,10,9)
+
 fun bubbleSort(lista: IntArray) {
-    println("Lista antes da ordenacao: $lista")
+
+    println("Lista antes da ordenacao: ${lista.contentToString()}")
     for (pass in 0 until (lista.size - 1)) {
         // A single pass of bubble sort
         for (posicaoAtual in 0 until (lista.size - pass - 1)) {
@@ -15,9 +16,10 @@ fun bubbleSort(lista: IntArray) {
             }
         }
     }
-    println("Lista depois da ordenacao: $lista")
+    println("Lista depois da ordenacao: ${lista.contentToString()}")
 }
 
 fun main() {
+    val listaInteiros = intArrayOf(8,2,3,5,6,4,1,10,9)
     bubbleSort(listaInteiros)
 }
