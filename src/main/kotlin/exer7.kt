@@ -10,7 +10,7 @@ fun organizarFuncionarios(lista:Array<Funcionario>){
             maior = funcionario
         }
     }
-    println("Funcionario com maior salário: $maior")
+    println("Funcionario com maior salario: ${maior.nome}\nCom salario de: R$ ${maior.salario}")
 }
 
 var lista = arrayOf(
