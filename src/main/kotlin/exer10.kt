@@ -2,13 +2,14 @@
 // as strings que começam com a letra "A", em ordem alfabética.
 
 fun organizaLista(lista:Array<String>){
-    lista.filter {  lista.any { it.startsWith("a") }}
-    lista.sort()
-    return println(lista)
+    val filteredList: Array<String> = lista.filter { it.startsWith("a")}.toTypedArray()
+    filteredList.sort()
+    return println(filteredList.contentToString())
 }
 
-var listaString:Array<String> = arrayOf("A dona aranha", "subiu pela parede veio",
-"a chuva forte e", "a derrubou")
+var listaString:Array<String> = arrayOf("a dona aranha", "subiu pela parede veio",
+"a chuva forte e", "a derrubou ja passou", "a chuva o sol ja vai surgindo", "E a dona aranha continua",
+"a subir")
 
 fun main() {
     organizaLista(listaString)
