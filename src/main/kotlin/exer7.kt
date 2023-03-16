@@ -1,7 +1,7 @@
 //Crie uma classe "Funcionario" com os atributos "nome", "idade" e
 // "salario". Crie uma função que receba uma lista de funcionários e
 // retorne o funcionário com o maior salário.
-class Funcionario(var nome:String, var idade:Int, var salario:Float)
+data class Funcionario(var nome:String, var idade:Int, var salario:Float)
 
 fun organizarFuncionarios(lista:Array<Funcionario>){
     var maior:Funcionario = lista[0]
@@ -10,7 +10,7 @@ fun organizarFuncionarios(lista:Array<Funcionario>){
             maior = funcionario
         }
     }
-    println("Funcionario com maior salario: ${maior.nome}\nCom salario de: R$ ${maior.salario}")
+    println("Funcionario com maior salario: $maior")
 }
 
 var lista = arrayOf(

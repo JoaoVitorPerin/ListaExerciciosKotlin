@@ -3,7 +3,7 @@
 
 var listaInteiros = intArrayOf(8,2,3,5,6,4,1,10,9)
 fun bubbleSort(lista: IntArray) {
-    println("Lista antes da ordenação: $lista")
+    println("Lista antes da ordenacao: $lista")
     for (pass in 0 until (lista.size - 1)) {
         // A single pass of bubble sort
         for (posicaoAtual in 0 until (lista.size - pass - 1)) {
@@ -15,7 +15,7 @@ fun bubbleSort(lista: IntArray) {
             }
         }
     }
-    println("Lista depois da ordenação: $lista")
+    println("Lista depois da ordenacao: $lista")
 }
 
 fun main() {
