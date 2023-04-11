@@ -1,4 +1,10 @@
 //Crie uma função que receba um número inteiro e retorne verdadeiro se o número for par e falso caso contrário.
+//Alunos:
+//Gabriel de Freitas Lima
+//Igor Rubio Lazaroto
+//João Vitor Perin
+//Thiago Jungles Caron
+
 
 fun imparPar(numero:Int): Boolean {
     if((numero % 2) == 0){
